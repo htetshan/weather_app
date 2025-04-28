@@ -1,16 +1,10 @@
-import { Box, Typography } from "@mui/material";
-import Link from "next/link";
-import React from "react";
+import LayoutApp from "@/components/LayoutApp";
 
-const Home = () => {
+export default function HomePage() {
   return (
-    <Box
-      sx={{ display: "flex", flexDirection: "column", alignContent: "center" }}
-    >
-      <Typography>Welcome Our Weather APP</Typography>
-      <Link href={"/layout"}>checking layout</Link>
-    </Box>
+    <LayoutApp>
+      <h1>Home Page</h1>
+      <p>Welcome to the Home Page!</p>
+    </LayoutApp>
   );
-};
-
-export default Home;
+}

@@ -1,16 +1,10 @@
-import React from "react";
-import DashboardLayoutBranding from "./layout";
+import LayoutApp from "@/components/LayoutApp";
 
-function SettingApp() {
-  return <div>Setting Page Content</div>;
-}
-
-SettingApp.getLayout = function getLayout(page: React.ReactNode) {
+export default function SettingPage() {
   return (
-    <DashboardLayoutBranding demoProp="defaultValue">
-      {page}
-    </DashboardLayoutBranding>
+    <LayoutApp>
+      <h1>Settings</h1>
+      <p>This is the Settings page content.</p>
+    </LayoutApp>
   );
-};
-
-export default SettingApp;
+}

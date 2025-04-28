@@ -1,16 +1,12 @@
-import React from "react";
-import DashboardLayoutBranding from "./layout";
+import LayoutApp from "@/components/LayoutApp";
+import { Typography } from "@mui/material";
 
-function AboutApp() {
-  return <div>About Page Content</div>;
-}
-
-AboutApp.getLayout = function getLayout(page: React.ReactNode) {
+export default function AboutPage() {
   return (
-    <DashboardLayoutBranding demoProp="someValue">
-      {page}
-    </DashboardLayoutBranding>
+    <LayoutApp>
+      <h1>About Us</h1>
+      <p>This is the About page content.</p>
+      <Typography>I am angry now but t tjttepodjsd</Typography>
+    </LayoutApp>
   );
-};
-
-export default AboutApp;
+}
