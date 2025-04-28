@@ -8,7 +8,7 @@ const Home = () => {
       sx={{ display: "flex", flexDirection: "column", alignContent: "center" }}
     >
       <Typography>Welcome Our Weather APP</Typography>
-      <Link href={"/weather"}>checking weater</Link>
+      <Link href={"/layout"}>checking layout</Link>
     </Box>
   );
 };
